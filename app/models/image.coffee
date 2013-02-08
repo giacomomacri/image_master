@@ -1,2 +1,6 @@
+fs = require('fs')
+
 module.exports = (compound, Image) ->
-  # define Image here
+  Image.directory = -> compound.app.root + '/data'
+  Image::filename = ->
+    return 'dsd/' + @photo
