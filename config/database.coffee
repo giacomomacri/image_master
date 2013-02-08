@@ -1,6 +1,7 @@
 module.exports = 
   development:
-    driver: "memory"
+    driver: "mongodb"
+    url: "mongodb://localhost/image_master"
 
   test:
     driver: "memory"
